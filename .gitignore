@@ -1,7 +1,9 @@
-__pycache____pycache__/
+__pycache__/
 *.pyc
 *.pyo
 *.pyd
-env/
-venv/
-*.log
+*.swp
+.env
+dist/
+build/
+*.egg-info/

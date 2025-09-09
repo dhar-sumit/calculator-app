@@ -1,5 +1,5 @@
 import unittest
-from calc import add, subtract, multiply, divide, modulus, power
+from calc_app.calc import add, subtract, multiply, divide, modulus, power
 
 class TestCalculator(unittest.TestCase):
 
