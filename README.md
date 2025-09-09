@@ -1,6 +1,8 @@
 # Demo
-1. Created a demo file
-2. Updated the demo file
+1. Created a demo file and updated it
 
-## Subheader
-Added subheader from VS-code by cloning it locally.
+# Added python code
+1. Added a calc.py and test_calc.py.
+
+# Added docker file
+
