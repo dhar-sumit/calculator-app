@@ -3,7 +3,7 @@ FROM python:3.13-slim
 WORKDIR /app
 
 # Copy Python module and tests
-COPY calculator_app/ ./calculator_app/
+COPY calc_app/ ./calc_app/
 COPY tests/ ./tests/
 COPY setup.py ./setup.py
 
