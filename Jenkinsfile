@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/dhar-sumit/demo-repo.git'
+                git branch: 'main', url: 'https://github.com/dhar-sumit/calculator-app.git'
             }
         }
 
