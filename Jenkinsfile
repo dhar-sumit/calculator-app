@@ -10,19 +10,14 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                script {
-                    docker.build("calculator-app")
-                }
+                bat 'docker build -t calculator-app .'
             }
         }
 
         stage('Run Tests in Container') {
             steps {
-                script {
-                    docker.image("calculator-app").inside {
-                        sh 'python -m unittest discover -v'
-                    }
-                }
+                // run container and execute tests
+                bat 'docker run --rm calculator-app python -m unittest discover -s tests'
             }
         }
     }
@@ -30,7 +25,7 @@ pipeline {
     post {
         always {
             echo 'Cleaning up...'
-            sh 'docker system prune -f'
+            bat 'docker ps -a'
         }
     }
 }
