@@ -6,3 +6,6 @@
 
 # Added docker file
 added the workflow to make containers
+
+# Added Jenkins file
+added the pipeline to fetch make docker containers etc. and do the build, test, automation in CI fkow.
