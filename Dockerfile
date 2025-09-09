@@ -7,7 +7,7 @@ COPY calc_app/ ./calc_app/
 COPY tests/ ./tests/
 COPY setup.py ./setup.py
 
-RUN pip install --upgrade pip
+RUN pip install --upgrade pip setuptools wheel
 
 # Default run: execute tests
 CMD ["python", "-m", "unittest", "discover", "-s", "tests"]
